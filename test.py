@@ -29,7 +29,6 @@ class MyNumbers:
             self.n = self.n + 1 
             return r
         raise StopIteration()
-
 myclass = MyNumbers(5)
 myiter = iter(myclass)
 for x in myiter:

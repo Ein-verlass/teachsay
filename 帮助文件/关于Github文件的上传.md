@@ -10,4 +10,5 @@
 >>>>![](https://github.com/Rubus-LF/teachsayimgs/raw/master/19-12-18/19-12-18-05.png)<br>
 >>>>![](https://github.com/Rubus-LF/teachsayimgs/raw/master/19-12-18/19-12-18-06.png)<br>
 >>5.如果想使用Git Bash的可以在`https://blog.csdn.net/qq_36667170/article/details/79085301`等CSDN博客上学习；<br>
->>补充文件夹上传，可直接将文件夹拖拽到相应上传区域，上传后会自动生成相对应路径的文件夹。
+##补充<br>
+>>6.补充文件夹上传，可直接将文件夹拖拽到相应上传区域，上传后会自动生成相对应路径的文件夹。

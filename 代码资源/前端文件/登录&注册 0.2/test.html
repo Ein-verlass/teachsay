@@ -1,0 +1,67 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>聊天室</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <script  lang="javescript" type="text/javascript">
+        function changeCode() {
+            var imgNode = document.getElementById("vimg");           
+            imgNode.src = "yanzhengma.ashx?t=" + (new Date()).valueOf(); //加时间是为了解决缓存问题
+ 
+        }
+ 
+</script>
+
+</head>
+
+<body>
+	<form action="" method="post">
+    <div class="padding-all">
+        <div class="header">
+            <h1> 哈哈哈聊天登陆</h1>
+        </div>
+       <div class="design-w3l">
+            <div class="mail-form-agile">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="用户名" required="" />
+                    <input type="password" name="password" class="padding" placeholder="密码" required="" />
+                    
+                    <p>
+                                            验证码：<img src="yanzhengma.ashx"
+                                                id="vimg" alt="" οnclick="changeCode()" />
+                                            <asp:TextBox ID="txtCode" runat="server" CssClass="textcode">
+                         
+                         
+                                            </asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3"
+                                                runat="server" ErrorMessage="请输入验证码！" Text="*" ControlToValidate="txtCode">
+                                            </asp:RequiredFieldValidator>
+                         
+                                       </p>                
+         
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <input type="submit" value="点我登录鸭">
+                </form>
+            </div>
+            <div class="clear"> </div>
+        </div>
+ </div>
+        <div class="footer">
+            <p>2019-2020 我要学会Python</p>
+        </div>
+    </div>
+</body>
+</html>

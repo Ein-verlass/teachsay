@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>注册 - 师说家教 - 领先的家教平台</title>
+  
+	<link rel="stylesheet" type="text/css" href="style/register-login.css">
+</head>
+<body>
+<div id="box"></div>
+<div class="cent-box register-box">
+	<div class="cent-box-header">
+		<h1 class="main-title hide">师说教育</h1>
+		<h2 class="sub-title">领先的家教服务平台</h2>
+	</div>
+
+	<div class="cont-main clearfix">
+		<div class="index-tab">
+			<div class="index-slide-nav">
+				<a href="login.html">登录</a>
+				<a href="register.html" class="active">注册</a>
+				<div class="slide-bar slide-bar1"></div>				
+			</div>
+		</div>
+
+		<div class="login form">
+			<div class="group">
+				<div class="group-ipt phonenumber">   
+					<input type="phonenumber" name="phonenumber" id="phonenumber" class="ipt" placeholder="请输入您的手机号" required>
+				
+				</div>
+			
+				 <div class="res-item">
+            
+            <input type="text" placeholder="验证码" class="input-item yanzheng">
+            <i class="res-icon am-icon-mobile"></i>
+            <button type="button" class="yanzhengma">发送验证码</button>
+        </div>
+        <div class="res-item">
+				
+<script>
+        var times = 10;
+        function roof(){
+            if(times == 0){
+                $('.yanzhengma').text('发送验证码('+times+'s)');
+                $('.yanzhengma').prop('disabled',false);
+                $('.yanzhengma').text('发送验证码');
+                times = 10;
+                return
+            }
+            $('.yanzhengma').text('发送验证码('+times+'s)');
+            times--;
+
+            setTimeout(roof,1000);
+        }
+        $('.yanzhengma').on('click',function(){
+            
+            $(this).prop('disabled',true);
+            roof();
+
+        });
+        $('#res-btn').on('click',function(){
+            var mobile = $('.mobile').val();
+            var yanzheng = $('.yanzheng').val();
+            var mima = $('.mima').val();
+            var repeatmima = $('.repeatmima').val();
+</script>
+				
+				
+				
+				
+				<div class="group-ipt password">
+					<input type="password" name="password" id="password" class="ipt" placeholder="设置登录密码" required>
+				</div>
+				<div class="group-ipt password1">
+					<input type="password" name="password1" id="password1" class="ipt" placeholder="重复密码" required>
+				</div>
+			</div>
+		</div>
+
+		<div class="button">
+			<button type="submit" class="login-btn register-btn" id="button">注册</button>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<p>师说教育©</p>
+	<p>  <a teachsay.com>teachsay.com</a> 2020</p>
+</div>
+<script src='js/particles.js' type="text/javascript"></script>
+<script src='js/background.js' type="text/javascript"></script>
+<script src='js/jquery.min.js' type="text/javascript"></script>
+<script src='js/layer/layer.js' type="text/javascript"></script>
+<script src='js/index.js' type="text/javascript"></script>
+<script>
+	$('.imgcode').hover(function(){
+		layer.tips("看不清？点击更换", '.verify', {
+        		time: 6000,
+        		tips: [2, "#3c3c3c"]
+    		})
+	},function(){
+		layer.closeAll('tips');
+	}).click(function(){
+		$(this).attr('src','这里验证码' + Math.random()); //验证码
+	})
+
+	$(".login-btn").click(function(){
+		var email = $("#email").val();
+		var password = $("#password").val();
+		var verify = $("#verify").val();
+		
+
+	})
+	$("#remember-me").click(function(){
+		var n = document.getElementById("remember-me").checked;
+		if(n){
+			$(".zt").show();
+		}else{
+			$(".zt").hide();
+		}
+	})
+</script>
+</body>
+</html>

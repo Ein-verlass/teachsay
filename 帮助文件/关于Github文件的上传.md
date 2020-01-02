@@ -9,4 +9,5 @@
 >>4.关于文件上传，麻烦大家上传的时候请在信息描述部分填写一下相关实现功能；（主要是后端同学的python需要按照类写，简单描述类的功能）<br>
 >>>>![](https://github.com/Rubus-LF/teachsayimgs/raw/master/19-12-18/19-12-18-05.png)<br>
 >>>>![](https://github.com/Rubus-LF/teachsayimgs/raw/master/19-12-18/19-12-18-06.png)<br>
->>5.如果想使用Git Bash的可以在`https://blog.csdn.net/qq_36667170/article/details/79085301`等CSDN博客上学习；
+>>5.如果想使用Git Bash的可以在`https://blog.csdn.net/qq_36667170/article/details/79085301`等CSDN博客上学习；<br>
+>>补充文件夹上传，可直接将文件夹拖拽到相应上传区域，上传后会自动生成相对应路径的文件夹。
